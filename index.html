@@ -7,15 +7,15 @@
     <meta name="author" content="Rohit Kaulgud">
     <meta name="keywords" content="rohit, kaulgud, webpage, homepage">
     <link rel="stylesheet" href="styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-    <link rel="shortcut icon" href="logo.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.png"/>
     <title>Rohit Kaulgud</title>
   </head>
   <body>
     <div id="home" class="homepage">
       <div class="main-header">
         <div class="logo">
-          <img src="logo.png" alt="logo" width="40px">
+          <img src="images/logo.png" alt="logo" width="40px">
           <ul class = header-name>
             <li>Rohit Kaulgud</li>
           </ul>
@@ -27,23 +27,28 @@
         </ul>
       </div>
       <div id="mainpage" class="mainpage">
+        <div id="welcome" class="welcome">
+          <h1>Hello there! Welcome to my webpage.</h1>
+          <p>This page was created for Learners' Space 2020 and is still under construction.</p>
+        </div>
         <div id="about" class="description">
           <h2 align="center">About Me</h2>
           <p>I am a junior undergraduate at IIT Bombay majoring in chemical engineering. My academic interests include engineering design and game theory.
             I play as a defender for the IITB hockey team (its mostly yelling frantically at midfielders to not let the ball reach you). I am currently
             a part of the IITB Racing team, a crew of 60+ students working together to build a formula student electric vehicle. I am a junior design engineer
-            in the wheel assembly division, and currently exploring the possibility of implementing a hubless wheel system.<br/>
+            in the wheel assembly division, and currently exploring the possibility of implementing a hubless wheel system. I am also a department academic
+            mentor at the chemical engineering department.<br/>
             In my spare time, I watch anime(call me a weeb, I'll take it as a compliment) and listen to J-Pop and classical music. I like telling people that
             I love to read.
         </div>
-        <figure class="image">
-          <img src="ping.png" alt="Ping Pong: The Animation" width="100%"/>
+        <figure id="image" class="image">
+          <img src="images/ping.png" alt="Ping Pong: The Animation" width="100%"/>
           <figcaption>Ping Pong: The Animation</figcaption>
         </figure>
         <div class="quote">
           <q>The Hero transends logic. The hero overturns what we thought we knew, and drives away the darkness. He's so uncomplicated... and he shines,
           bright and joyous.</q>
-          <p align="right">~Ping Pong: The Animation</p>
+          <p align="right">~Tsukimoto Makoto, Ping Pong: The Animation</p>
         </div>
         <div id="skills" class="description">
           <h2 align="center">Technical Skills</h2>
@@ -61,8 +66,20 @@
             <tr align="left"><td>Matriculation</td><td>CBSE</td><td>Indian Model School</td><td>2016</td></tr>
           </table>
         </div>
-        <a class="scroll-to-top" href="#home"><center>Scroll to top &#8593;</center></a>
-        <a class="social" href="https://www.facebook.com/fabian.fornerod.1/" target="_blank"><center><img src="facebook.png" alt="Facebook Profile" height="50px"/></center></a>
+        <div id="footer" class="footer">
+          <div class="copyright">
+            <p>&copy; Rohit Kaulgud , 2020.</P>
+          </div>
+          <div class="scroll-to-top">
+            <a href="#home"><center>Scroll to top &#8593;</center></a>
+          </div>
+          <div class="social">
+            <a class="media-icon" href="mailto:rohit1k9@yahoo.com" target="_blank"><center><img src="images/mailgrey.svg" alt="Instagram" height="33px"/></center></a>
+            <a class="media-icon" href="https://www.facebook.com/fabian.fornerod.1/" target="_blank"><center><img src="images/fbgrey.svg" alt="Facebook" height="30px"/></center></a>
+            <a class="media-icon" href="https://www.instagram.com/rokaulgud/" target="_blank"><center><img src="images/instagrey.svg" alt="Instagram" height="30px"/></center></a>
+            <a class="media-icon" href="https://www.linkedin.com/in/rohit-kaulgud" target="_blank"><center><img src="images/ingrey.svg" alt="Linkedin" height="30px"/></center></a>
+          </div>
+        </div>
       </div>
     </div>
   </body>
