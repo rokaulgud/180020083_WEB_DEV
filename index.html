@@ -2,25 +2,30 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="shortcut icon" href="logo.png"/>
-    <title>About Me</title>
     <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/>
     <meta name="description" content="personal webpage">
     <meta name="author" content="Rohit Kaulgud">
-    <meta name="keywords" content="Kaulgud">
+    <meta name="keywords" content="rohit, kaulgud, webpage, homepage">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="shortcut icon" href="logo.png"/>
+    <title>Rohit Kaulgud</title>
   </head>
   <body>
-    <div class="homepage">
-      <div class="header" id="header">
-        <h1>Hi, I'm Rohit Kaulgud</h1>
+    <div id="home" class="homepage">
+      <div class="main-header">
+        <div class="logo">
+          <img src="logo.png" alt="logo" width="40px">
+          <ul class = header-name>
+            <li>Rohit Kaulgud</li>
+          </ul>
+        </div>
+        <ul class="menu">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
       </div>
       <div id="mainpage" class="mainpage">
-        <!-- <p><center>While you're here, listen to this chill song by Khalid</center></p>
-        <audio controls align="center">
-          <source src='khalid.mp3' type='audio/mpeg'/>
-          Your browser does not support this feature
-        </audio>-->
         <div id="about" class="description">
           <h2 align="center">About Me</h2>
           <p>I am a junior undergraduate at IIT Bombay majoring in chemical engineering. My academic interests include engineering design and game theory.
@@ -30,8 +35,8 @@
             In my spare time, I watch anime(call me a weeb, I'll take it as a compliment) and listen to J-Pop and classical music. I like telling people that
             I love to read.
         </div>
-        <figure>
-          <center margin="20px"><img src="ping.png" alt="Ping Pong: The Animation" height="270px" width="480px"/></center>
+        <figure class="image">
+          <img src="ping.png" alt="Ping Pong: The Animation" width="100%"/>
           <figcaption>Ping Pong: The Animation</figcaption>
         </figure>
         <div class="quote">
@@ -39,24 +44,23 @@
           bright and joyous.</q>
           <p align="right">~Ping Pong: The Animation</p>
         </div>
-        <div id="tech-skills" class="description">
-          <h2 align="center" margin="10px">Technical Skills</h2>
+        <div id="skills" class="description">
+          <h2 align="center">Technical Skills</h2>
           <p>This whole webpage is an instrument of self-promotion under the guise of a summer camp assignment :P. I am fairly comfortable with computer-aided
           modelling using SolidWorks and AutoCAD, and simulations using ANSYS Workbench. I can code in C++, python and MATLAB. I know just enough about
           arduino and circuits to tinker around and make mini projects <a href=" https://www.tinkercad.com/things/1vXhwmVeyB6 ">like this one</a>. I am
-          learning web development, and as of now can host static webpages using HTML and CSS.
-          </p>
+          learning web development, and as of now can host static webpages using HTML and CSS.    </p>
         </div>
-        <p>Just for the sake of including semantic tags, I have put up some boring information on this page, such as my education:</p>
         <div id="education" class="table">
-          <table class="table" border="1" cellpadding="5" width="100%">
-            <tr align="left" bgcolor="#e9efff"><th>Education</th><th>Board</th><th>School</th><th>Year</th></tr>
-            <tr align="left"><th>Undergraduate</th><th>-</th><th>IIT Bombay</th><th>2022(expected)</th></tr>
-            <tr align="left"><th>Inermediate/+2</th><th>HSC</th><th>NKOJC, Solapur</th><th>2018</th></tr>
-            <tr align="left"><th>Matriculation</th><th>CBSE</th><th>Indian Model School</th><th>2016</th></tr>
+          <p>Here is the summary of my education:</p>
+          <table class="tabular">
+            <tr align="left" bgcolor="#eeeeee"><th>Education</th><th>Board</th><th>School</th><th>Year</th></tr>
+            <tr align="left"><td>Undergraduate</td><td>-</td><td>IIT Bombay</td><td>2022*</td></tr>
+            <tr align="left"><td>Inermediate/+2</td><td>HSC</td><td>NKOJC, Solapur</td><td>2018</td></tr>
+            <tr align="left"><td>Matriculation</td><td>CBSE</td><td>Indian Model School</td><td>2016</td></tr>
           </table>
         </div>
-        <a class="scroll-to-top" href="#header"><center>Scroll to top &#8593;</center></a>
+        <a class="scroll-to-top" href="#home"><center>Scroll to top &#8593;</center></a>
         <a class="social" href="https://www.facebook.com/fabian.fornerod.1/" target="_blank"><center><img src="facebook.png" alt="Facebook Profile" height="50px"/></center></a>
       </div>
     </div>

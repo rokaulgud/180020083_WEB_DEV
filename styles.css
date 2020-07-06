@@ -3,49 +3,102 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
-  background-color: #ffffff;
-  font-size: 16px;
-  font-family: monospace, sans-serif, serif;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.8em;
 }
 
-.header{
-  display: block;
-  width: 900px;
-  padding: 50px 10px;
-  margin: 20px auto;
-  text-align: center;
-  background-color: #e9efff;
-  border-bottom: 2px solid #004a99;
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em;
+  line-height: 1.3em;
+  font-weight: normal;
+  font-style: normal;
 }
 
-.mainpage{
-  display: block;
-  width: 900px;
-  padding: 50px 10px;
-  margin: 20px auto;
+a:link,
+a:visited {
+  color: #5D6063;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
-.description{
-  margin: 10px auto;
-  padding: 20px 0px;
-  border-bottom: 1px solid #004a99;
+.main-header{
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 10px 50px;
+  background: #ffffff;
+  box-shadow: 0 2px 0 rgba(93, 96, 99, .1);
+}
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-name>li{
+  display: inline;
+  margin-left: 20px;
+}
+.menu > li {
+  display: inline;
+  margin-right: 50px;
+}
+
+.menu > li:last-of-type {
+  margin-right: 0;
+}
+
+.description {
+  max-width: 720px;
   text-align: justify;
+
+  margin: auto;
+  margin-top: 100px;
+  padding: 4em 1em;
+  border-bottom: 1px solid grey;
 }
-.description h2{
-  margin-bottom: 10px;
-}
-figcaption{
+.image{
+  padding: 1em;
+  margin: auto;
+  max-width: 720px;
   text-align: center;
 }
 .quote{
-  margin: 10px auto;
-  padding: 20px;
-  border: 1px solid blue;
-  text-align: left;
+  margin: 1em auto;
+  padding: 2em 1em;
+  max-width: 720px;
+  border-left: 5px solid grey;
+  background: #eeeeee;
 }
 .table{
-  margin: 10px auto;
-  padding: 0;
-  border-bottom: 1px solid #004a99;
+  max-width: 720px;
+  margin: 1em auto;
+  padding: 2em 0em;
+}
+table, th, td {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+}
+@media only screen and (max-width: 500px){
+  .main-header{
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px){
+  .description{
+    padding: 2em 2em;
+    border: 1px solid grey;
+  }
 }
