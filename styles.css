@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 18px;
   line-height: 1.8em;
 }
@@ -78,6 +78,10 @@ a:hover {
   border-left: 5px solid grey;
   background: #eeeeee;
 }
+q{
+  font-style: italic;
+}
+
 .table{
   max-width: 720px;
   margin: 1em auto;
